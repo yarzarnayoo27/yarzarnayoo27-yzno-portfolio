@@ -41,7 +41,8 @@
 }
 
 @theme {
-  --color-p1: #0f0f0f;
+  --color-dark: #0f0f0f;
+  --color-light: #ffffff;
 
   --font-qurova: "Qurova", system-ui, sans-serif;
 }
@@ -52,7 +53,10 @@
   }
 
   header {
-    @apply w-screen bg-p1;
+    @apply w-screen;
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
 
   nav ul li {
