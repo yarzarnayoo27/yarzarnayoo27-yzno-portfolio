@@ -27,9 +27,6 @@ export default function ThemeProvider({ children }) {
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  console.log("ThemeContext loaded");
-  console.log("Theme", theme)
-
   const toggleTheme = () =>
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
 

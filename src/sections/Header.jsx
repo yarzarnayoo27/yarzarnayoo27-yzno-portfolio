@@ -2,8 +2,8 @@ import clsx from "clsx";
 import { useContext, useEffect, useState } from "react";
 import { Link as LinkScroll } from "react-scroll";
 import { navLinks } from "../../constants";
-import ThemeToggle from "../components/ThemeToggle";
 import { ThemeContext } from "../contexts/ThemeContext";
+import ThemeToggle from "../components/ThemeToggle";
 
 const Header = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -22,12 +22,12 @@ const Header = () => {
     };
   }, []);
 
-  const NavLink = ({ link }) => {
-    const Icon = link.icon;
+  const NavLink = ({ navLink }) => {
+    const Icon = navLink.icon;
     return (
       <LinkScroll
         onClick={() => setIsOpen(false)}
-        to={link.title}
+        to={navLink.title}
         offset={-100}
         spy
         smooth
@@ -39,15 +39,17 @@ const Header = () => {
             <Icon />
           </span>
         </div>
-        <div className="text-[11px]">{link.title}</div>
+        <div className="text-[11px]">{navLink.title}</div>
       </LinkScroll>
     );
   };
   return (
     <header
       className={clsx(
-        "px-[5%] py-[5px]",
-        theme === "dark" ? "bg-dark text-light" : "bg-light text-dark",
+        "fixed top-0 left-0 z-50 px-[5%] py-[5px] transition-colors duration-500",
+        theme === "dark"
+          ? "bg-dark bg-pattern-dark text-light"
+          : "bg-light bg-pattern-light text-dark",
       )}
     >
       <div className="flex justify-between items-center h-[65px]">
@@ -62,7 +64,7 @@ const Header = () => {
               className="w-[25px] h-[32px]"
             />
             <div className="pt-1">
-              <span>YZNO</span>
+              <span className="">YZNO</span>
             </div>
           </a>
         </div>
@@ -70,8 +72,8 @@ const Header = () => {
         <div className="flex justify-center min-w-0">
           <nav className="max-md:hidden">
             <ul className="flex gap-3 sm:gap-4 lg:gap-6 xl:gap-8">
-              {navLinks.map((link) => (
-                <NavLink key={link.id} link={link} />
+              {navLinks.map((navLink) => (
+                <NavLink key={navLink.id} navLink={navLink} />
               ))}
             </ul>
           </nav>

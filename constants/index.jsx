@@ -594,3 +594,9 @@ export const navLinks = [
     icon: EducationIcon,
   },
 ];
+
+export const loopTexts = [
+  "Yar Zar Nay Oo!",
+  "Front-End Engineer!",
+  "Back-End Engineer!",
+];
