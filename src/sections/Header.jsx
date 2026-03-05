@@ -47,9 +47,7 @@ const Header = () => {
     <header
       className={clsx(
         "fixed top-0 left-0 z-50 px-[5%] py-[5px] transition-colors duration-500",
-        theme === "dark"
-          ? "bg-dark bg-pattern-dark text-light"
-          : "bg-light bg-pattern-light text-dark",
+        theme === "dark" ? "bg-dark-modern text-light" : "bg-light text-dark",
       )}
     >
       <div className="flex justify-between items-center h-[65px]">

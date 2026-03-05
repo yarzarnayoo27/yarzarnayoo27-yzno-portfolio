@@ -7,9 +7,7 @@ const OverlayHeroImage = ({ exp, profession }) => {
   return (
     <div className="relative h-fit">
       <img
-        src={
-          theme === "dark" ? "/images/herodark.png" : "/images/herolight.png"
-        }
+        src="/images/heroImage.png"
         alt="hero image"
         className="w-[300px] h-auto object-contain"
       />

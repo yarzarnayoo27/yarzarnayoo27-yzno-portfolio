@@ -28,7 +28,7 @@ export default function ThemeToggle() {
           transition-transform duration-500 ease-out
           origin-center
           rounded-full`,
-          theme === "dark" ? "bg-zinc-800" : "bg-gray-200",
+          theme === "dark" ? "bg-dark" : "bg-gray-200",
         )}
       />
       <Sun

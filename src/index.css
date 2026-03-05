@@ -89,8 +89,68 @@
   --font-qurova: "Qurova", system-ui, sans-serif;
   --font-poppins: "Poppins", system-ui, sans-serif;
 
-  --bg-pattern-light: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236b7280' fill-opacity='0.2'%3E%3Ccircle cx='10' cy='10' r='1'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0s'/%3E%3C/circle%3E%3Ccircle cx='20' cy='25' r='0.8'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.2s'/%3E%3C/circle%3E%3Ccircle cx='30' cy='15' r='0.6'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.4s'/%3E%3C/circle%3E%3Ccircle cx='45' cy='5' r='0.5'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.6s'/%3E%3C/circle%3E%3Ccircle cx='60' cy='30' r='0.7'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.8s'/%3E%3C/circle%3E%3Ccircle cx='70' cy='10' r='0.9'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1s'/%3E%3C/circle%3E%3Ccircle cx='5' cy='50' r='0.6'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.2s'/%3E%3C/circle%3E%3Ccircle cx='25' cy='65' r='0.5'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.4s'/%3E%3C/circle%3E%3Ccircle cx='15' cy='40' r='0.8'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.6s'/%3E%3C/circle%3E%3Ccircle cx='40' cy='75' r='0.4'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.8s'/%3E%3C/circle%3E%3Ccircle cx='55' cy='55' r='0.7'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='2s'/%3E%3C/circle%3E%3Ccircle cx='75' cy='45' r='0.5'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='2.2s'/%3E%3C/circle%3E%3Ccircle cx='65' cy='70' r='0.6'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='2.4s'/%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  --bg-pattern-dark: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23A5B4FC' fill-opacity='0.3'%3E%3Ccircle cx='10' cy='10' r='1'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0s'/%3E%3C/circle%3E%3Ccircle cx='20' cy='25' r='0.8'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.2s'/%3E%3C/circle%3E%3Ccircle cx='30' cy='15' r='0.6'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.4s'/%3E%3C/circle%3E%3Ccircle cx='45' cy='5' r='0.5'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.6s'/%3E%3C/circle%3E%3Ccircle cx='60' cy='30' r='0.7'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='0.8s'/%3E%3C/circle%3E%3Ccircle cx='70' cy='10' r='0.9'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1s'/%3E%3C/circle%3E%3Ccircle cx='5' cy='50' r='0.6'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.2s'/%3E%3C/circle%3E%3Ccircle cx='25' cy='65' r='0.5'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.4s'/%3E%3C/circle%3E%3Ccircle cx='15' cy='40' r='0.8'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.6s'/%3E%3C/circle%3E%3Ccircle cx='40' cy='75' r='0.4'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='1.8s'/%3E%3C/circle%3E%3Ccircle cx='55' cy='55' r='0.7'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='2s'/%3E%3C/circle%3E%3Ccircle cx='75' cy='45' r='0.5'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='2.2s'/%3E%3C/circle%3E%3Ccircle cx='65' cy='70' r='0.6'%3E%3CanimateTransform attributeName='transform' type='translate' values='0 0; 1.5 -1.5; -1.5 1.5; 1 1; 0 0' dur='5s' repeatCount='indefinite' calcMode='spline' keySplines='0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1; 0.4 0 0.2 1' begin='2.4s'/%3E%3C/circle%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  --stars-small: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23A5B4FC'%3E%3Ccircle cx='8' cy='12' r='0.56'%3E%3Canimate attributeName='opacity' values='0;0.7;0' dur='3s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='40' cy='20' r='0.49'%3E%3Canimate attributeName='opacity' values='0;0.6;0' dur='4s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='25' cy='45' r='0.42'%3E%3Canimate attributeName='opacity' values='0;0.5;0' dur='5s' repeatCount='indefinite'/%3E%3C/circle%3E%3C/g%3E%3C/svg%3E");
+
+  --stars-medium: url("data:image/svg+xml,%3Csvg width='110' height='110' viewBox='0 0 110 110' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C7D2FE'%3E%3Ccircle cx='20' cy='30' r='0.7'%3E%3Canimate attributeName='opacity' values='0;0.7;0' dur='4s' repeatCount='indefinite'/%3E%3C/circle%3E%3Ccircle cx='80' cy='60' r='0.63'%3E%3Canimate attributeName='opacity' values='0;0.6;0' dur='5s' repeatCount='indefinite'/%3E%3C/circle%3E%3C/g%3E%3C/svg%3E");
+
+  --stars-large: url("data:image/svg+xml,%3Csvg width='180' height='180' viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23E0E7FF'%3E%3Ccircle cx='50' cy='80' r='0.91'%3E%3Canimate attributeName='opacity' values='0;0.8;0' dur='6s' repeatCount='indefinite'/%3E%3C/circle%3E%3C/g%3E%3C/svg%3E");
+
+  --bg-dark-modern:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(99, 102, 241, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(168, 85, 247, 0.12),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(99, 102, 241, 0.08),
+      transparent 60%
+    ),
+    linear-gradient(135deg, #0f0f0f 0%, #111111 50%, #0f0f0f 100%);
+}
+
+@utility bg-dark-modern {
+  position: relative;
+  background: var(--bg-dark-modern);
+  background-size: 300% 300%;
+  animation: modern-futuristic 30s ease-in-out infinite;
+}
+
+.bg-dark-modern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: var(--stars-small), var(--stars-medium), var(--stars-large);
+
+  background-size:
+    190px 190px,
+    230px 230px,
+    320px 320px;
+
+  background-repeat: repeat;
+
+  animation: star-drift 130s linear infinite;
+
+  opacity: 0.7;
+  pointer-events: none;
+  filter: blur(0.3px) brightness(1.2);
+}
+
+@utility glass-premium {
+  backdrop-filter: blur(120px);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 0 40px rgba(255, 255, 255, 0.03);
 }
 
 @layer base {
@@ -109,15 +169,52 @@
     @apply block max-md:hidden;
   }
 
-  .bg-pattern-light {
-    background-image: var(--bg-pattern-light);
-    background-size: 80px 80px;
-    background-repeat: repeat;
+  @keyframes modern-futuristic {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
   }
 
-  .bg-pattern-dark {
-    background-image: var(--bg-pattern-dark);
-    background-size: 80px 80px;
-    background-repeat: repeat;
+  @keyframes star-drift {
+    0% {
+      background-position:
+        0 0,
+        0 0,
+        0 0;
+    }
+
+    25% {
+      background-position:
+        250px -150px,
+        -200px 120px,
+        150px 200px;
+    }
+
+    50% {
+      background-position:
+        500px -300px,
+        -400px 240px,
+        300px 400px;
+    }
+
+    75% {
+      background-position:
+        750px -450px,
+        -600px 360px,
+        450px 600px;
+    }
+
+    100% {
+      background-position:
+        1000px -600px,
+        -800px 500px,
+        600px 900px;
+    }
   }
 }
