@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import clsx from "clsx";
 import TypingLoop from "./TypingLoop";
+import { Mail } from "lucide-react";
+import HeroButton from "./HeroButton";
+import Technologies from "./Technologies";
 
 const HeroContent = () => {
   const { theme } = useContext(ThemeContext);
@@ -36,6 +39,26 @@ const HeroContent = () => {
           Building Scalable and Maintainable Backend Architectures with RESTful
           API Design and Microservices.
         </p>
+      </div>
+
+      <div className="w-full mt-4 flex gap-5 justify-center md:justify-start items-center">
+        <HeroButton href="mailto:yarzarnayoo27@gmail.com">Hire me</HeroButton>
+        <HeroButton
+          variant="filled"
+          icon={<Mail size={18} />}
+          href="/yznoResume.pdf"
+        >
+          Resume
+        </HeroButton>
+      </div>
+
+      <div className="w-full flex justify-center my-6">
+        <div className="w-full max-md:w-[75%] h-[0.1px] opacity-20 bg-slate-500"></div>
+      </div>
+
+      <div>
+        <p>Core Technologies:</p>
+        <Technologies />
       </div>
     </>
   );

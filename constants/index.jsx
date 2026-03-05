@@ -1,3 +1,19 @@
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiTypescript,
+  SiNodedotjs,
+  SiExpress,
+  SiNestjs,
+  SiMysql,
+  SiPostgresql,
+  SiMongodb,
+  SiJavascript,
+  SiSpring,
+  SiOpenjdk,
+} from "react-icons/si";
+
 const HomeIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -599,4 +615,20 @@ export const loopTexts = [
   "Yar Zar Nay Oo!",
   "Front-End Engineer!",
   "Back-End Engineer!",
+];
+
+export const technologies = [
+  { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
+  { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+  { icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
+  { icon: SiReact, label: "React", color: "#61DAFB" },
+  { icon: SiNextdotjs, label: "Next.js", color: "#6B7280" },
+  { icon: SiNodedotjs, label: "Node.js", color: "#339933" },
+  { icon: SiExpress, label: "Express.js", color: "#6B7280" },
+  { icon: SiNestjs, label: "NestJS", color: "#E0234E" },
+  { icon: SiOpenjdk, label: "Java", color: "#ED8B00" },
+  { icon: SiSpring, label: "Spring", color: "#6DB33F" },
+  { icon: SiMysql, label: "MySQL", color: "#4479A1" },
+  { icon: SiPostgresql, label: "PostgreSQL", color: "#336791" },
+  { icon: SiMongodb, label: "MongoDB", color: "#47A248" },
 ];
