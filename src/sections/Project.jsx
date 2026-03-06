@@ -5,7 +5,7 @@ import Section from "../components/Section";
 const Project = () => {
   return (
     <>
-      <Section name="Projects" title="My Projects" leftBottom topRight>
+      <Section name="Projects" title="Projects" leftBottom topRight>
         <div className="my-5 py-5 px-[15%] max-md:px-0">
           <p className="text-center">
             Built and managed 2 Flutter WebView and 3 enterprise web

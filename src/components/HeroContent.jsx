@@ -20,7 +20,14 @@ const HeroContent = () => {
         <p>
           Front-End Engineer at{" "}
           <a href="https://www.abank.com.mm/" className="relative group">
-            <span className="text-yellow-500 underline">A Bank</span>
+            <span
+              className={clsx(
+                "underline",
+                theme === "dark" ? "text-yellow-500" : "text-violet-600",
+              )}
+            >
+              A Bank
+            </span>
             <span
               className={clsx(
                 "absolute -top-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded px-2 py-1 opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300 text-sm shadow-md",

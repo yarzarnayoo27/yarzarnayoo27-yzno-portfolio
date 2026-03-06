@@ -1,8 +1,12 @@
 import { Element } from "react-scroll";
 import OverlayHeroImage from "../components/OverlayHeroImage";
 import HeroContent from "../components/HeroContent";
+import clsx from "clsx";
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const Hero = () => {
+  const { theme } = useContext(ThemeContext);
   return (
     <Element name="Home">
       <section className="relative z-10 pt-[75px] w-full transition-colors duration-500 overflow-hidden">
@@ -19,7 +23,14 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-20 h-px mx-auto bg-gradient-to-r from-transparent via-primary to-transparent" />
+        <div
+          className={clsx(
+            "w-20 h-px mx-auto bg-gradient-to-r",
+            theme === "dark"
+              ? "from-transparent via-primary to-transparent"
+              : "from-transparent via-violet-500 to-transparent",
+          )}
+        />
       </section>
     </Element>
   );

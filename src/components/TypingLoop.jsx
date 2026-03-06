@@ -1,10 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { loopTexts } from "../../constants";
+import { ThemeContext } from "../contexts/ThemeContext";
+import clsx from "clsx";
 
 export default function TypingLoop() {
   const [textIndex, setTextIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     const currentText = loopTexts[textIndex];
@@ -31,9 +34,23 @@ export default function TypingLoop() {
   }, [displayText, isDeleting, textIndex]);
 
   return (
-    <h1 className="text-3xl max-[400px]:text-[25px] font-bold bg-clip-text text-transparent bg-linear-to-r from-primary via-yellow-500 to-yellow-700">
+    <h1
+      className={clsx(
+        "text-3xl max-[400px]:text-[25px] font-bold bg-clip-text text-transparent bg-linear-to-r",
+        theme === "dark"
+          ? " from-primary via-yellow-500 to-yellow-700"
+          : "from-violet-500 via-violet-600 to-violet-800",
+      )}
+    >
       {displayText}
-      <span className="ml-1 animate-pulse bg-yellow-500">|</span>
+      <span
+        className={clsx(
+          "ml-1 animate-pulse",
+          theme === "dark" ? "bg-yellow-500" : "bg-violet-600",
+        )}
+      >
+        |
+      </span>
     </h1>
   );
 }

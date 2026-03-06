@@ -1,4 +1,9 @@
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
+import clsx from "clsx";
+
 const AboutContent = ({ icon: Icon, color, text }) => {
+  const { theme } = useContext(ThemeContext);
   return (
     <>
       <div className="group flex items-start gap-5">
@@ -15,7 +20,14 @@ const AboutContent = ({ icon: Icon, color, text }) => {
           {text}
         </p>
       </div>
-      <div className="my-5 mx-auto w-[50%] h-px bg-linear-to-r from-transparent via-primary/20 to-transparent" />
+      <div
+        className={clsx(
+          "my-5 mx-auto w-[50%] h-px bg-linear-to-r",
+          theme === "dark"
+            ? "from-transparent via-primary/20 to-transparent"
+            : "from-transparent via-violet-500/40 to-transparent",
+        )}
+      />
     </>
   );
 };

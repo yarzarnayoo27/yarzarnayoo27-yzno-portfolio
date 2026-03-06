@@ -29,8 +29,13 @@ const Header = () => {
         offset={-100}
         spy
         smooth
-        activeClass="text-primary"
-        className="w-[50px] flex flex-col justify-center items-center gap-1.5 transition-transform duration-400 hover:scale-120"
+        activeClass={clsx(
+          theme === "dark" ? "text-primary" : "text-violet-500",
+        )}
+        className={clsx(
+          "w-[50px] flex flex-col justify-center items-center gap-1.5 transition-transform duration-400 hover:scale-120",
+          theme === "dark" ? "hover:text-primary" : "hover:text-violet-500",
+        )}
       >
         <div className="">
           <span className="text-2xl">
@@ -57,7 +62,11 @@ const Header = () => {
           className="h-full flex items-center gap-3 font-qurova font-bold text-2xl transition-transform duration-400 hover:scale-110 cursor-pointer"
         >
           <img
-            src="/images/yzno.svg"
+            src={clsx(
+              theme === "dark"
+                ? "/images/yznoYellow.svg"
+                : "/images/yznoViolet.svg",
+            )}
             alt="logo"
             className="w-[25px] h-[32px]"
           />

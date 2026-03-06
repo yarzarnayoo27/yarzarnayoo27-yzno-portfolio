@@ -683,3 +683,27 @@ export const xoraSaas = {
     { icon: SiVite, label: "Vite", color: "#646CFF" },
   ],
 };
+
+export const timelineData = [
+  {
+    id: 1,
+    year: "2023",
+    title: "Freelance Web Development",
+    description:
+      "Delivered freelance websites and started building portfolio projects.",
+  },
+  {
+    id: 2,
+    year: "2024",
+    title: "Frontend Development (A Bank)",
+    description:
+      "Started building and maintaining enterprise web applications for A Bank, ensuring robust performance and scalable features.",
+  },
+  {
+    id: 3,
+    year: "Present",
+    title: "Frontend Development (A Bank)",
+    description:
+      "Built multiple enterprise web apps and Flutter WebView projects for ABank.",
+  },
+];
