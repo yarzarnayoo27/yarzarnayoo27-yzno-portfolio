@@ -19,7 +19,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-20 sm:w-24 h-px mx-auto bg-gradient-to-r from-transparent via-primary to-transparent" />
+        <div className="w-20 h-px mx-auto bg-gradient-to-r from-transparent via-primary to-transparent" />
       </section>
     </Element>
   );

@@ -13,6 +13,7 @@ import {
   SiSpring,
   SiOpenjdk,
 } from "react-icons/si";
+import { Code2, Rocket, Users, Palette } from "lucide-react";
 
 const HomeIcon = (props) => (
   <svg
@@ -631,4 +632,27 @@ export const technologies = [
   { icon: SiMysql, label: "MySQL", color: "#4479A1" },
   { icon: SiPostgresql, label: "PostgreSQL", color: "#336791" },
   { icon: SiMongodb, label: "MongoDB", color: "#47A248" },
+];
+
+export const aboutContents = [
+  {
+    icon: Code2,
+    color: "#3B82F6",
+    text: "Full-stack developer with over 5 years of experience creating scalable web and mobile applications using modern frameworks and efficient architecture.",
+  },
+  {
+    icon: Rocket,
+    color: "#F59E0B",
+    text: "Experienced in designing and building high-performance digital products with a focus on scalability and maintainable code.",
+  },
+  {
+    icon: Users,
+    color: "#10B981",
+    text: "Dedicated to developing reliable, user-focused applications through agile teamwork and strong development practices.",
+  },
+  {
+    icon: Palette,
+    color: "#EC4899",
+    text: "Passionate about design and crafting intuitive, visually appealing interfaces that enhance user experience.",
+  },
 ];
