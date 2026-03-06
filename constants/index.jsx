@@ -627,7 +627,7 @@ export const technologies = [
   { icon: SiExpress, label: "Express.js", color: "#6B7280" },
   { icon: SiNestjs, label: "NestJS", color: "#E0234E" },
   { icon: SiOpenjdk, label: "Java", color: "#ED8B00" },
-  { icon: SiSpring, label: "Spring", color: "#6DB33F" },
+  { icon: SiSpring, label: "Spring Boot", color: "#6DB33F" },
   { icon: SiMysql, label: "MySQL", color: "#4479A1" },
   { icon: SiPostgresql, label: "PostgreSQL", color: "#336791" },
   { icon: SiMongodb, label: "MongoDB", color: "#47A248" },
