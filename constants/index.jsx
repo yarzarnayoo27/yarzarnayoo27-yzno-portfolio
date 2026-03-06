@@ -12,6 +12,8 @@ import {
   SiJavascript,
   SiSpring,
   SiOpenjdk,
+  SiVite,
+  SiGreensock,
 } from "react-icons/si";
 import { Code2, Rocket, Users, Palette } from "lucide-react";
 
@@ -656,3 +658,28 @@ export const aboutContents = [
     text: "Passionate about design and crafting intuitive, visually appealing interfaces that enhance user experience.",
   },
 ];
+
+export const mojitoCocktails = {
+  imgPath: "/images/mojitoCocktails.png",
+  url: "https://mojito-cocktails-yzno.vercel.app/",
+  gitUrl: "https://github.com/yarzarnayoo27/mojito-cocktails",
+  technologies: [
+    { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
+    { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+    { icon: SiReact, label: "React", color: "#61DAFB" },
+    { icon: SiVite, label: "Vite", color: "#646CFF" },
+    { icon: SiGreensock, label: "GSAP", color: "#88CE02" },
+  ],
+};
+
+export const xoraSaas = {
+  imgPath: "/images/xoraSaas.png",
+  url: "https://xora-saas-yzno.vercel.app/",
+  gitUrl: "https://github.com/yarzarnayoo27/xora-saas",
+  technologies: [
+    { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
+    { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+    { icon: SiReact, label: "React", color: "#61DAFB" },
+    { icon: SiVite, label: "Vite", color: "#646CFF" },
+  ],
+};

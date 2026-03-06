@@ -1,7 +1,6 @@
-import { technologies } from "../../constants";
 import Technology from "./Technology";
 
-const Technologies = () => {
+const Technologies = ({ technologies }) => {
   return (
     <div className="my-4 flex flex-wrap gap-4">
       {technologies.map((technology) => (

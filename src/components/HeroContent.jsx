@@ -5,6 +5,7 @@ import TypingLoop from "./TypingLoop";
 import { Mail } from "lucide-react";
 import HeroButton from "./HeroButton";
 import Technologies from "./Technologies";
+import { technologies } from "../../constants";
 
 const HeroContent = () => {
   const { theme } = useContext(ThemeContext);
@@ -58,7 +59,7 @@ const HeroContent = () => {
 
       <div>
         <p>Core Technologies:</p>
-        <Technologies />
+        <Technologies technologies={technologies} />
       </div>
     </>
   );
