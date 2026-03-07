@@ -89,6 +89,7 @@ const Header = () => {
           <ThemeToggle />
         </div>
       </div>
+      <div className="pointer-events-none absolute bottom-0 left-0 w-full h-[1px] glass-line" />
     </header>
   );
 };

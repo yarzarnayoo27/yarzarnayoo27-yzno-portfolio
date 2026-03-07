@@ -88,7 +88,7 @@ const ExperienceIcon = ({ className, ...props }) => (
   </svg>
 );
 
-const EducationIcon = (props) => (
+export const EducationIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="1em"
@@ -705,5 +705,20 @@ export const timelineData = [
     title: "Frontend Development (A Bank)",
     description:
       "Built multiple enterprise web apps and Flutter WebView projects for ABank.",
+  },
+];
+
+export const educationData = [
+  {
+    id: 1,
+    year: "2014 - 2024",
+    institution: "Technological University (Hmawbi)",
+    description: "Bachelor of Engineering in IT",
+  },
+  {
+    id: 2,
+    year: "2022 - 2023",
+    institution: "Twinkle College",
+    description: "Diploma in Level 5 (NCC)",
   },
 ];
