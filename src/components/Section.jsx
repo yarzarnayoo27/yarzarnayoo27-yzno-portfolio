@@ -9,6 +9,7 @@ const Section = ({
   title,
   leftBottom = false,
   topRight = false,
+  breakPoint = true,
 }) => {
   const { theme } = useContext(ThemeContext);
   return (
@@ -43,14 +44,16 @@ const Section = ({
             />
             {children}
           </div>
-          <div
-            className={clsx(
-              "w-20 h-px mx-auto bg-linear-to-r",
-              theme === "dark"
-                ? "from-transparent via-primary to-transparent"
-                : "from-transparent via-violet-500 to-transparent",
-            )}
-          />
+          {breakPoint && (
+            <div
+              className={clsx(
+                "w-20 h-px mx-auto bg-linear-to-r",
+                theme === "dark"
+                  ? "from-transparent via-primary to-transparent"
+                  : "from-transparent via-violet-500 to-transparent",
+              )}
+            />
+          )}
         </section>
       </Element>
     </>
