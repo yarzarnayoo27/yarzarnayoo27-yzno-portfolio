@@ -8,6 +8,7 @@ import Header from "./sections/Header";
 import Hero from "./sections/Hero";
 import Project from "./sections/Project";
 import Footer from "./sections/Footer";
+import Contact from "./sections/Contact";
 
 const App = () => {
   const { theme } = useContext(ThemeContext);
@@ -25,6 +26,7 @@ const App = () => {
         <Project />
         <Experience />
         <Education />
+        <Contact />
         <Footer />
       </main>
     </>
