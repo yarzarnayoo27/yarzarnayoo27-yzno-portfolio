@@ -16,6 +16,7 @@ import {
   SiGreensock,
 } from "react-icons/si";
 import { Code2, Rocket, Users, Palette } from "lucide-react";
+import * as yup from "yup";
 
 const HomeIcon = (props) => (
   <svg
@@ -722,3 +723,29 @@ export const educationData = [
     description: "Diploma in Level 5 (NCC)",
   },
 ];
+
+export const mailFormSchema = yup.object({
+  userName: yup
+    .string()
+    .required("Name is required")
+    .min(2, "Name must be at least 2 characters")
+    .max(100, "Name cannot exceed 100 characters"),
+
+  userEmail: yup
+    .string()
+    .required("Email is required")
+    .email("Enter a valid email")
+    .max(100, "Email cannot exceed 100 characters"),
+
+  subject: yup
+    .string()
+    .required("Subject is required")
+    .min(2, "Subject must be at least 2 characters")
+    .max(100, "Subject cannot exceed 100 characters"),
+
+  message: yup
+    .string()
+    .required("Message cannot be empty")
+    .min(10, "Message must be at least 10 characters")
+    .max(800, "Message cannot exceed 800 characters"),
+});
