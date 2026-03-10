@@ -16,7 +16,7 @@ const App = () => {
     <>
       <main
         className={clsx(
-          "overflow-hidden",
+          "pt-[75px] max-md:pt-[60px] max-md:pb-[75px] overflow-hidden",
           theme === "dark" ? "bg-dark-modern text-light" : "bg-light text-dark",
         )}
       >
