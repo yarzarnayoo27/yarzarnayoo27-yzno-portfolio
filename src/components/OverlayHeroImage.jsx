@@ -6,11 +6,22 @@ const OverlayHeroImage = ({ exp, profession }) => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className="relative h-fit">
-      <img
-        src="/images/heroImage.png"
-        alt="hero image"
-        className="w-[300px] h-auto object-contain"
-      />
+      <div
+        className={clsx(
+          "relative w-full h-[450px] flex justify-center items-end transition-all duration-500",
+          theme === "dark" ? "pb-10" : "pb-0",
+        )}
+      >
+        <img
+          src={
+            theme === "dark"
+              ? "/images/cartoonImage.png"
+              : "/images/heroImage.png"
+          }
+          alt="hero image"
+          className="w-[300px] h-auto object-contain transition-all duration-500"
+        />
+      </div>
       <div className="mt-8 px-8 py-1 absolute -top-0.5 -right-2 bg-light text-dark rounded-xl shadow-lg text-sm font-semibold">
         <p className="relative pl-5 before:absolute before:top-1.5 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-green-600">
           {exp}+ Years Experience
