@@ -688,6 +688,19 @@ export const projects = [
       { icon: SiVite, label: "Vite", color: "#646CFF" },
     ],
   },
+  {
+    id: 3,
+    name: "yzno-portfolio",
+    imgPath: "/images/yznoPortfolio.png",
+    url: "https://yzno-portfolio.vercel.app/",
+    gitUrl: "https://github.com/yarzarnayoo27/yzno-portfolio",
+    technologies: [
+      { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
+      { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+      { icon: SiReact, label: "React", color: "#61DAFB" },
+      { icon: SiVite, label: "Vite", color: "#646CFF" },
+    ],
+  },
 ];
 
 export const timelineData = [
