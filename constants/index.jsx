@@ -660,30 +660,35 @@ export const aboutContents = [
   },
 ];
 
-export const mojitoCocktails = {
-  imgPath: "/images/mojitoCocktails.png",
-  url: "https://mojito-cocktails-yzno.vercel.app/",
-  gitUrl: "https://github.com/yarzarnayoo27/mojito-cocktails",
-  technologies: [
-    { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
-    { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
-    { icon: SiReact, label: "React", color: "#61DAFB" },
-    { icon: SiVite, label: "Vite", color: "#646CFF" },
-    { icon: SiGreensock, label: "GSAP", color: "#88CE02" },
-  ],
-};
-
-export const xoraSaas = {
-  imgPath: "/images/xoraSaas.png",
-  url: "https://xora-saas-yzno.vercel.app/",
-  gitUrl: "https://github.com/yarzarnayoo27/xora-saas",
-  technologies: [
-    { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
-    { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
-    { icon: SiReact, label: "React", color: "#61DAFB" },
-    { icon: SiVite, label: "Vite", color: "#646CFF" },
-  ],
-};
+export const projects = [
+  {
+    id: 1,
+    name: "mojito-cocktails",
+    imgPath: "/images/mojitoCocktails.png",
+    url: "https://mojito-cocktails-yzno.vercel.app/",
+    gitUrl: "https://github.com/yarzarnayoo27/mojito-cocktails",
+    technologies: [
+      { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
+      { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+      { icon: SiReact, label: "React", color: "#61DAFB" },
+      { icon: SiVite, label: "Vite", color: "#646CFF" },
+      { icon: SiGreensock, label: "GSAP", color: "#88CE02" },
+    ],
+  },
+  {
+    id: 2,
+    name: "xora-saas",
+    imgPath: "/images/xoraSaas.png",
+    url: "https://xora-saas-yzno.vercel.app/",
+    gitUrl: "https://github.com/yarzarnayoo27/xora-saas",
+    technologies: [
+      { icon: SiTailwindcss, label: "Tailwind CSS", color: "#38B2AC" },
+      { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+      { icon: SiReact, label: "React", color: "#61DAFB" },
+      { icon: SiVite, label: "Vite", color: "#646CFF" },
+    ],
+  },
+];
 
 export const timelineData = [
   {

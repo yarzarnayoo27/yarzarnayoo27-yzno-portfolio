@@ -214,3 +214,13 @@
     }
   }
 }
+
+@layer components {
+  .swiper-pagination-bullet {
+    background: var(--bullet) !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--bullet-active) !important;
+  }
+}

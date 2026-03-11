@@ -26,7 +26,14 @@ const OverlayHeroImage = ({ exp, profession }) => {
         />
       </div>
 
-      <div className={clsx("absolute bottom-0 left-1/2 p-2 transform -translate-x-1/2 rounded-lg shadow-lg w-[280px] text-center bg-linear-to-br", theme === "dark" ? "text-dark from-primary via-yellow-500 to-yellow-700" : "text-light from-violet-500 via-violet-600 to-violet-800")}>
+      <div
+        className={clsx(
+          "absolute bottom-0 left-1/2 p-2 transform -translate-x-1/2 rounded-lg shadow-lg w-[280px] text-center bg-linear-to-br",
+          theme === "dark"
+            ? "text-dark from-primary via-yellow-500 to-yellow-700"
+            : "text-light from-violet-500 via-violet-600 to-violet-800",
+        )}
+      >
         <p
           className={clsx(
             "font-bold",
