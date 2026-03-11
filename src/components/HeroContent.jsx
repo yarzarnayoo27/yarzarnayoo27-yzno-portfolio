@@ -19,7 +19,12 @@ const HeroContent = () => {
       <div className="mt-8 ml-10 mb-5 max-sm:mt-5 max-sm:mx-5 max-md:mx-10 flex flex-col gap-5">
         <p>
           Front-End Engineer at{" "}
-          <a href="https://www.abank.com.mm/" className="relative group">
+          <a
+            href="https://www.abank.com.mm/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative group"
+          >
             <span
               className={clsx(
                 "underline",

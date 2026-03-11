@@ -26,6 +26,8 @@ const HeroButton = ({ children, href, variant = "outline", icon }) => {
         variant === "outline" ? outline : filled,
       )}
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
     >
       {icon && icon}
       {children}
