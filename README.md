@@ -15,6 +15,7 @@
   <div>
     <img src="https://img.shields.io/badge/-React-blue?style=for-the-badge&logo=react&logoColor=white" />
     <img src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+    <img src="https://img.shields.io/badge/-GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white" />
   </div>
 </div>
 
@@ -37,6 +38,8 @@ This portfolio is a modern and responsive personal website developed using React
 
 - **[Tailwind CSS](https://tailwindcss.com/)** is a utility-first CSS framework that allows developers to design custom user interfaces by applying low-level utility classes directly in HTML, streamlining the design process.
 
+- **[GSAP](https://gsap.com/)** is a powerful JavaScript animation library used in this project to create dynamic, scroll-driven visuals.
+
 ## <a name="features">🔋 Features</a>
 
 - **Stunning Sections**: Includes hero, about, projects, experience, education, and contact sections.
@@ -44,6 +47,8 @@ This portfolio is a modern and responsive personal website developed using React
 - **Dynamic Theming**: Implemented light and dark themes using React Context API with smooth UI consistency across all sections.
 
 - **Seamless Navigation**: Offers a smooth user experience with intuitive navigation and scrolling.
+
+- **ScrollTrigger Effects**: Power scroll-based animations and timeline control with GSAP’s ScrollTrigger.
 
 - **Project Showcase Slider**: Interactive slider to showcase featured projects with smooth transitions.
 

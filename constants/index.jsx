@@ -699,6 +699,7 @@ export const projects = [
       { icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
       { icon: SiReact, label: "React", color: "#61DAFB" },
       { icon: SiVite, label: "Vite", color: "#646CFF" },
+      { icon: SiGreensock, label: "GSAP", color: "#88CE02" },
     ],
   },
 ];
