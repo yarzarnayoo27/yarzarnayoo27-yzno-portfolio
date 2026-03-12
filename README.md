@@ -2,8 +2,13 @@
 
   <h2 align="center">YZNO Portfolio Website</h2>
   
+  <p align="center">
   <img src="public/readme/darkHero.png" alt="Project Banner">
+  </p>
+
+  <p align="center">
   <img src="public/readme/lightHero.png" alt="Project Banner">
+  </p>
 
   <br>
 

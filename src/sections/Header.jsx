@@ -63,15 +63,24 @@ const Header = () => {
             offset={-100}
             className="h-full flex items-center gap-3 font-qurova font-bold text-2xl transition-transform duration-400 hover:scale-110 cursor-pointer"
           >
-            <img
-              src={clsx(
-                theme === "dark"
-                  ? "/images/yznoYellow.svg"
-                  : "/images/yznoViolet.svg",
-              )}
-              alt="logo"
-              className="w-[25px] h-[32px]"
-            />
+            <div className="relative w-[25px] h-[32px]">
+              <img
+                src="/images/yznoYellow.svg"
+                alt="logo"
+                className={clsx(
+                  "absolute w-[25px] h-[32px] transition-opacity duration-300",
+                  theme === "dark" ? "opacity-100" : "opacity-0",
+                )}
+              />
+              <img
+                src="/images/yznoViolet.svg"
+                alt="logo"
+                className={clsx(
+                  "absolute w-[25px] h-[32px] transition-opacity duration-300",
+                  theme === "dark" ? "opacity-0" : "opacity-100",
+                )}
+              />
+            </div>
             <div className="pt-1">
               <span className="">YZNO</span>
             </div>

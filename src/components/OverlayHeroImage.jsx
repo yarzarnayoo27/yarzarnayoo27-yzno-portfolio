@@ -5,24 +5,31 @@ import { ThemeContext } from "../contexts/ThemeContext";
 const OverlayHeroImage = ({ exp, profession }) => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="relative h-fit">
+    <div className="relative w-full h-fit">
       <div
         className={clsx(
-          "relative w-full h-[450px] flex justify-center items-end transition-all duration-500",
+          "relative w-full h-[450px] flex justify-center items-end transition-all duration-500 ease-in-out",
           theme === "dark" ? "pb-10" : "pb-0",
         )}
       >
         <img
-          src={
-            theme === "dark"
-              ? "/images/cartoonImage.png"
-              : "/images/heroImage.png"
-          }
+          src="/images/cartoonImage.png"
           alt="hero image"
-          className="w-[300px] h-auto object-contain transition-all duration-500"
+          className={clsx(
+            "absolute bottom-0 left-1/2 -translate-x-1/2 pb-10 w-[300px] h-auto object-contain transition-opacity duration-1500 ease-[cubic-bezier(0.4,0,0.2,1)] will-change-[opacity]",
+            theme === "dark" ? "opacity-100" : "opacity-0",
+          )}
+        />
+        <img
+          src="/images/heroImage.png"
+          alt="hero image"
+          className={clsx(
+            "absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-auto object-contain transition-opacity duration-1500 ease-[cubic-bezier(0.4,0,0.2,1)] will-change-[opacity]",
+            theme === "dark" ? "opacity-0" : "opacity-100",
+          )}
         />
       </div>
-      <div className="mt-8 px-8 py-1 absolute -top-0.5 -right-2 bg-light text-dark rounded-xl shadow-lg text-sm font-semibold">
+      <div className="mt-8 px-8 py-1 absolute -top-0.5 right-12 bg-light text-dark rounded-xl shadow-lg text-sm font-semibold">
         <p className="relative pl-5 before:absolute before:top-1.5 before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-green-600">
           {exp}+ Years Experience
         </p>

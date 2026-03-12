@@ -641,7 +641,7 @@ export const aboutContents = [
   {
     icon: Code2,
     color: "#3B82F6",
-    text: "Full-stack developer with over 5 years of experience creating scalable web and mobile applications using modern frameworks and efficient architecture.",
+    text: "Full-stack developer with over 3 years of experience creating scalable web and mobile applications using modern frameworks and efficient architecture.",
   },
   {
     icon: Rocket,
