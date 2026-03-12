@@ -4,7 +4,13 @@ import ProjectCarousel from "../components/ProjectCarousel";
 const Project = () => {
   return (
     <>
-      <Section name="Projects" title="Projects" leftBottom topRight>
+      <Section
+        id="project"
+        name="Projects"
+        title="Projects"
+        leftBottom
+        topRight
+      >
         <div className="my-5 pt-5 px-[15%] max-md:px-0">
           <p className="text-center">
             Built and managed 2 Flutter WebView and 3 enterprise web

@@ -5,6 +5,7 @@ import { ThemeContext } from "../contexts/ThemeContext";
 
 const Section = ({
   children,
+  id,
   name,
   title,
   leftBottom = false,
@@ -15,7 +16,10 @@ const Section = ({
   return (
     <>
       <Element name={name}>
-        <section className="pt-3 relative z-10 w-full transition-colors duration-500 overflow-hidden">
+        <section
+          id={id}
+          className="pt-3 relative z-10 w-full transition-colors duration-500 overflow-hidden"
+        >
           {topRight && (
             <div className="absolute w-96 h-96 max-md:w-64 max-md:h-64 -right-40 -top-40 max-md:-left-70 max-md:-bottom-70 rounded-full pointer-events-none bg-[#6366F1]/30 blur-[170px]" />
           )}

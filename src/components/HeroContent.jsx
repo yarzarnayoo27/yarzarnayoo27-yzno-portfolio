@@ -1,6 +1,8 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import clsx from "clsx";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
 import TypingLoop from "./TypingLoop";
 import { Mail } from "lucide-react";
 import HeroButton from "./HeroButton";
@@ -9,14 +11,34 @@ import { technologies } from "../../constants";
 
 const HeroContent = () => {
   const { theme } = useContext(ThemeContext);
+  const titleRef = useRef(null);
+  const paragraphRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.from(
+      [...titleRef.current.children, ...paragraphRef.current.children],
+      {
+        opacity: 0,
+        y: 40,
+        duration: 2,
+        stagger: 0.2,
+        ease: "power3.out",
+        delay: 0.3,
+      },
+    );
+  }, []);
+
   return (
     <>
-      <div className="max-md:text-center">
+      <div ref={titleRef} className="max-md:text-center">
         <h2 className="text-2xl max-sm:text-[20px]">Hi there, I'm</h2>
         <TypingLoop />
       </div>
 
-      <div className="mt-8 ml-10 mb-5 max-sm:mt-5 max-sm:mx-5 max-md:mx-10 flex flex-col gap-5">
+      <div
+        ref={paragraphRef}
+        className="mt-8 ml-10 mb-5 max-sm:mt-5 max-sm:mx-5 max-md:mx-10 flex flex-col gap-5"
+      >
         <p>
           Front-End Engineer at{" "}
           <a

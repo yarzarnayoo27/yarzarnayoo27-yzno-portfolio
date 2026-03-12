@@ -2,18 +2,39 @@ import { Element } from "react-scroll";
 import OverlayHeroImage from "../components/OverlayHeroImage";
 import HeroContent from "../components/HeroContent";
 import clsx from "clsx";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
+  const imageContainer = useRef(null);
+
+  useGSAP(() => {
+    gsap.from(imageContainer.current.children, {
+      x: -80,
+      y: 80,
+      opacity: 0,
+      scale: 0.5,
+      duration: 2,
+      ease: "power3.out",
+    });
+  }, []);
+
   return (
     <Element name="Home">
-      <section className="relative z-10 w-full transition-colors duration-500 overflow-hidden">
+      <section
+        id="hero"
+        className="relative z-10 w-full transition-colors duration-500 overflow-hidden"
+      >
         <div className="absolute w-96 h-96 max-md:w-64 max-md:h-64 -left-40 -bottom-40 max-md:-left-70 max-md:-bottom-70 rounded-full pointer-events-none bg-[#6366F1]/30 blur-[170px]" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-8 lg:px-8">
           <div className="flex max-md:flex-col max-sm:gap-7 max-md:gap-10">
-            <div className="flex-1 flex justify-center max-md:w-full">
+            <div
+              ref={imageContainer}
+              className="flex-1 flex justify-center max-md:w-full"
+            >
               <OverlayHeroImage exp={3} profession="Front-End Engineer" />
             </div>
             <div className="flex-1 flex flex-col max-md:w-full">

@@ -1,14 +1,33 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import Section from "../components/Section";
 import { ThemeContext } from "../contexts/ThemeContext";
 import clsx from "clsx";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 import { timelineData } from "../../constants";
 
 const Experience = () => {
   const { theme } = useContext(ThemeContext);
+  const experienceCardsRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.from(experienceCardsRef.current.children, {
+      y: 120,
+      opacity: 0,
+      duration: 2,
+      ease: "bounce.out",
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: "#experience",
+        start: "top 70%",
+        toggleActions: "play none none none",
+      },
+    });
+  }, []);
+
   return (
     <>
-      <Section name="Experience" title="Experience">
+      <Section id="experience" name="Experience" title="Experience">
         <div className="my-5 py-5 px-[15%] max-md:px-0">
           <div className="relative max-w-5xl mx-auto px-5">
             {/* timeline axis */}
@@ -18,7 +37,7 @@ const Experience = () => {
                 theme === "dark" ? "bg-primary" : "bg-violet-500",
               )}
             />
-            <div className="space-y-16">
+            <div ref={experienceCardsRef} className="space-y-16">
               {timelineData.map((item, index) => {
                 const isLeft = index % 2 === 0;
 
