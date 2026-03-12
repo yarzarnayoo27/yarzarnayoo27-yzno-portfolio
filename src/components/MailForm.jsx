@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 import clsx from "clsx";
 import emailjs from "@emailjs/browser";
@@ -8,9 +8,13 @@ import { mailFormSchema } from "../../constants";
 import MessageModal from "./MessageModal";
 import ValidationMessage from "./ValidationMessage";
 
+const MAX_EMAILS = 6;
+const TIME_WINDOW = 60 * 60 * 1000;
+
 const MailForm = () => {
   const { theme } = useContext(ThemeContext);
-  const [status, setStatus] = useState(null);
+  const [isSending, setIsSending] = useState(false);
+  const [modalData, setModalData] = useState(null);
   const formRef = useRef();
   const {
     register,
@@ -21,7 +25,38 @@ const MailForm = () => {
     resolver: yupResolver(mailFormSchema),
   });
 
+  useEffect(() => {
+    if (modalData) {
+      const timer = setTimeout(() => setModalData(null), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [modalData]);
+
   const sendEmail = () => {
+    if (formRef.current["honeypot"]?.value) return;
+    setIsSending(true);
+
+    const now = Date.now();
+    const submissions =
+      JSON.parse(localStorage.getItem("mailSubmissions") || "[]") || [];
+
+    const recentSubmissions = submissions.filter(
+      (time) => now - time < TIME_WINDOW,
+    );
+
+    if (recentSubmissions.length >= MAX_EMAILS) {
+      setModalData({
+        status: "limit",
+        title: "Limit Reached",
+        message: `You can send a maximum of ${MAX_EMAILS} emails per hour.`,
+      });
+      setIsSending(false);
+      return;
+    }
+
+    recentSubmissions.push(now);
+    localStorage.setItem("mailSubmissions", JSON.stringify(recentSubmissions));
+
     emailjs
       .sendForm(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
@@ -31,20 +66,23 @@ const MailForm = () => {
       )
       .then(
         () => {
-          setStatus("success");
+          setModalData({
+            status: "success",
+            title: "Message Sent",
+            message: "Thank you for contacting me.",
+          });
           reset();
-          setTimeout(() => {
-            setStatus(null);
-          }, 3000);
         },
         () => {
-          setStatus("error");
+          setModalData({
+            status: "error",
+            title: "Failed to Send",
+            message: "Please try again later.",
+          });
           reset();
-          setTimeout(() => {
-            setStatus(null);
-          }, 3000);
         },
-      );
+      )
+      .finally(() => setIsSending(false));
   };
   return (
     <>
@@ -113,20 +151,36 @@ const MailForm = () => {
           <ValidationMessage message={errors.message.message} />
         )}
 
+        <input
+          type="text"
+          name="honeypot"
+          style={{ display: "none" }}
+          tabIndex="-1"
+          autoComplete="off"
+        />
+
         <button
           type="submit"
+          disabled={isSending}
           className={clsx(
             "px-6 py-3 rounded-lg hover:opacity-90 transition duration-300",
+            isSending && "cursor-not-allowed opacity-60",
             theme === "dark"
               ? "bg-primary text-dark"
               : "bg-violet-500 text-light",
           )}
         >
-          Send Message
+          {isSending ? "Sending..." : "Send Message"}
         </button>
       </form>
 
-      {status && <MessageModal status={status} />}
+      {modalData && (
+        <MessageModal
+          status={modalData.status}
+          title={modalData.title}
+          message={modalData.message}
+        />
+      )}
     </>
   );
 };
