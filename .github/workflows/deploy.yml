@@ -1,0 +1,42 @@
+name: Deploy YZNO Portfolio
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Vite app
+        run: npm run build
+
+      - name: Deploy YZNO Portfolio
+        uses: appleboy/scp-action@v0.1.2
+        with:
+          host: ${{ secrets.YZNO_LIGHTSAIL_IP }}
+          username: ubuntu
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
+          source: "dist/*"
+          target: "/var/www/yzno-portfolio/dist"
+
+      - name: Reload Nginx
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.YZNO_LIGHTSAIL_IP }}
+          username: ubuntu
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
+          script: |
+            sudo systemctl reload nginx
