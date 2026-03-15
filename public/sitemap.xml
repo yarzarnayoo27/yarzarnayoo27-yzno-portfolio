@@ -4,4 +4,8 @@
     <loc>https://yarzarnayoo.com/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://yarzarnayoo.com/yznoResume.pdf</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
